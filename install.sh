@@ -37,7 +37,7 @@ Splash(){
 	sleep 0.05
 	echo -e "\e[32m                                                                                   \e[0m";
 	sleep 0.05
-	echo -e "\e[35mVersion 2.0\e[0m";
+	echo -e "\e[35mVersion 3.0\e[0m";
 	sleep 0.05
 	echo "......................................................................................"
 	sleep .75
