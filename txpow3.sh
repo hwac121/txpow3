@@ -120,6 +120,7 @@ select opt in "${options[@]}" ; do
 			Splash
 			echo -e "Now showing general status";
 			nmcli dev status
+			sleep 8
 		break
 		;;			
 		"What is Connected")
@@ -127,11 +128,13 @@ select opt in "${options[@]}" ; do
 			Splash
 			echo -e "Now showing what is connected";
 			nmcli connection show
+			sleep 8
 		break
 		;;
 		"wlan0 Connection Status")
-		nmcli device show wlan0
-		break
+			nmcli device show wlan0
+			sleep 8
+			break
 		;;			
 		"wlan0")
 			clear
@@ -166,6 +169,7 @@ select opt in "${options[@]}" ; do
 		;;
 		"wlan1 Connection Status")
 			nmcli device show wlan1
+			sleep 8
 		break
 		;;			
 		"wlan1")
@@ -201,6 +205,7 @@ select opt in "${options[@]}" ; do
 		;;
 		"wlan2 Connection Status")
 			nmcli device show wlan2
+			sleep 8
 		break
 		;;			
 		"wlan2")
@@ -236,6 +241,7 @@ select opt in "${options[@]}" ; do
 		;;
 		"wlan3 Connection Status")
 			nmcli device show wlan3
+			sleep 8
 		break
 		;;			
 		"wlan3")
@@ -367,7 +373,7 @@ select opt in "${options[@]}" ; do
 		"Version")
 			clear
 			Splash
-			echo -e "\e[38mVersion 2.0 - Released June 12, 2019\e[0m"
+			echo -e "\e[38mVersion 3.0 - Released July 19, 2019\e[0m"
 			sleep 4
 		break
 		;;
