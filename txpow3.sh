@@ -128,12 +128,16 @@ select opt in "${options[@]}" ; do
 			Splash
 			echo -e "Now showing what is connected";
 			nmcli connection show
+			echo -e " "
+			echo -e "\e[31mPlease Note:\e[0m \e[7mYou will return to the main menu in 8 seconds...\e[0m"
 			sleep 8
 		break
 		;;
 		"wlan0 Connection Status")
 			nmcli device show wlan0
 			sleep 8
+			echo -e " "
+			echo -e "\e[31mPlease Note:\e[0m \e[7mYou will return to the main menu in 8 seconds...\e[0m"
 			break
 		;;			
 		"wlan0")
@@ -169,6 +173,8 @@ select opt in "${options[@]}" ; do
 		;;
 		"wlan1 Connection Status")
 			nmcli device show wlan1
+			echo -e " "
+			echo -e "\e[31mPlease Note:\e[0m \e[7mYou will return to the main menu in 8 seconds...\e[0m"
 			sleep 8
 		break
 		;;			
@@ -205,6 +211,8 @@ select opt in "${options[@]}" ; do
 		;;
 		"wlan2 Connection Status")
 			nmcli device show wlan2
+			echo -e " "
+			echo -e "\e[31mPlease Note:\e[0m \e[7mYou will return to the main menu in 8 seconds...\e[0m"
 			sleep 8
 		break
 		;;			
@@ -241,6 +249,8 @@ select opt in "${options[@]}" ; do
 		;;
 		"wlan3 Connection Status")
 			nmcli device show wlan3
+			echo -e " "
+			echo -e "\e[31mPlease Note:\e[0m \e[7mYou will return to the main menu in 8 seconds...\e[0m"
 			sleep 8
 		break
 		;;			
@@ -381,7 +391,7 @@ select opt in "${options[@]}" ; do
 			clear
 			Splash
 			echo -e " "
-			echo -e "\e[37mThank you for using TX Power Blast by hwac121 - 2019\e[0m"
+			echo -e "\e[37mThank you for using TX Power Blast 3.0 by Majik Cat Security - July 2019\e[0m"
 			sleep 3
 			clear
 			menu=1
