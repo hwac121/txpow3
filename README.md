@@ -38,7 +38,7 @@ the author information, given credit for said code.
 INSTALLATION
 -
 1. git clone https://github.com/hwac121/txpow3.git
-2. cd txpow2
+2. cd txpow3
 3. chmod +x install.sh
 4. sudo ./install.sh
 
