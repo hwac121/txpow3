@@ -6,8 +6,7 @@
 
 # TITLE: Tx Power Blast v3.0
 # AUTHOR: Majik Cat Security
-# DATE: July 19, 2019
-# WEBSITE: http://www.majikcat.com
+# DATE: November 3, 2022
 # GITHUB: https://github.com/hwac121
 
 #================================================================================================
