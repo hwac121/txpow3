@@ -64,18 +64,18 @@ fi
 clear
 Splash
 echo -e "\e[34mRemoving old version if present...\e[0m"
-rm /bin/txpow
+rm /bin/txpow3
 echo -e "\e[36mSetting Global Permissions...\e[0m"
-cp txpow3.sh /bin/txpow
+cp txpow3.sh /bin/txpow3
 sleep 1.5
 echo -e "\e[32m....Setting permissions....\e[0m"
 sleep 0.5
-chmod +x /bin/txpow
+chmod +x /bin/txpow3
 chmod +x txpow3.sh
 sleep 1.5
 echo -e "\e[34mInstallation is complete!\e[0m"
 sleep 1.5
-echo -e "Just type \e[32mtxpow\e[0m as root, or as user \e[32msudo txpow\e[0m to run anywhere in terminal"
+echo -e "Just type \e[32mtxpow3\e[0m as root, or as user \e[32msudo txpow3\e[0m to run anywhere in terminal"
 echo " "
 sleep 3
 clear

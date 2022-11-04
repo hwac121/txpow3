@@ -119,7 +119,7 @@ select opt in "${options[@]}" ; do
 			clear
 			Splash
 			echo -e "Now showing general status";
-			nmcli dev status
+			sudo nmcli dev status
 			sleep 8
 		break
 		;;			
@@ -127,14 +127,14 @@ select opt in "${options[@]}" ; do
 			clear
 			Splash
 			echo -e "Now showing what is connected";
-			nmcli connection show
+			sudo nmcli connection show
 			echo -e " "
 			echo -e "\e[31mPlease Note:\e[0m \e[7mYou will return to the main menu in 8 seconds...\e[0m"
 			sleep 8
 		break
 		;;
 		"wlan0 Connection Status")
-			nmcli device show wlan0
+			sudo nmcli device show wlan0
 			sleep 8
 			echo -e " "
 			echo -e "\e[31mPlease Note:\e[0m \e[7mYou will return to the main menu in 8 seconds...\e[0m"
@@ -147,32 +147,32 @@ select opt in "${options[@]}" ; do
 			sleep 0.5
 			echo -e " "
 			echo -e "Taking down \e[34mwlan0\e[0m";
-			ifconfig wlan0 down
+			sudo ifconfig wlan0 down
 			echo -e " "
 			sleep 3
 			echo -e "Setting Region to \e[34mBolivia\e[0m";
-			iw reg set GY
+			sudo iw reg set GY
 			echo -e " "
 			sleep 3
 			echo -e "Setting \e[34mTxPower to 30\e[0m";
-			iwconfig wlan0 txpower 30
+			sudo iwconfig wlan0 txpower 30
 			echo -e " "
 			sleep 2
 			echo -e "Starting \e[34mwlan0\e[0m";
-			ifconfig wlan0 up
+			sudo ifconfig wlan0 up
 			echo -e " " 
 			echo -e "Pulled \e[34mwlan0\e[0m interface up";
 			sleep 1.5
 			clear
 			sleep 0.5
-			iwconfig
+			sudo iwconfig
 			sleep 3
 			clear
 			echo -e "\e[33mTx Power Set\e[0m";
 		break
 		;;
 		"wlan1 Connection Status")
-			nmcli device show wlan1
+			sudo nmcli device show wlan1
 			echo -e " "
 			echo -e "\e[31mPlease Note:\e[0m \e[7mYou will return to the main menu in 8 seconds...\e[0m"
 			sleep 8
@@ -185,32 +185,32 @@ select opt in "${options[@]}" ; do
 			echo -e " "
 			sleep 0.5
 			echo -e "Taking down \e[34mwlan1\e[0m";
-			ifconfig wlan1 down
+			sudo ifconfig wlan1 down
 			echo -e " "
 			sleep 3
 			echo -e "Setting Region to \e[34mBolivia\e[0m";
-			iw reg set GY
+			sudo iw reg set GY
 			echo -e " "
 			sleep 3
 			echo -e "Setting \e[34mTxPower to 30\e[0m";
-			iwconfig wlan1 txpower 30
+			sudo iwconfig wlan1 txpower 30
 			echo -e " "
 			sleep 2
 			echo -e "Starting \e[34mwlan1\e[0m";
-			ifconfig wlan1 up
+			sudo ifconfig wlan1 up
 			echo -e " " 
 			echo -e "Pulled \e[34mwlan1\e[0m interface up";
 			sleep 1.5
 			clear
 			sleep 0.5
-			iwconfig
+			sudo iwconfig
 			sleep 3
 			clear
 			echo -e "\e[33mTx Power Now Set\e[0m";
 		break
 		;;
 		"wlan2 Connection Status")
-			nmcli device show wlan2
+			sudo nmcli device show wlan2
 			echo -e " "
 			echo -e "\e[31mPlease Note:\e[0m \e[7mYou will return to the main menu in 8 seconds...\e[0m"
 			sleep 8
@@ -223,32 +223,32 @@ select opt in "${options[@]}" ; do
 			echo -e " "
 			sleep 0.5
 			echo -e "Taking down \e[34mwlan2\e[0m";
-			ifconfig wlan2 down
+			sudo ifconfig wlan2 down
 			echo -e " "
 			sleep 3
 			echo -e "Setting Region to \e[34mBolivia\e[0m";
-			iw reg set GY
+			sudo iw reg set GY
 			echo -e " "
 			sleep 3
 			echo -e "Setting \e[34mTxPower to 30\e[0m";
-			iwconfig wlan2 txpower 30
+			sudo iwconfig wlan2 txpower 30
 			echo -e " "
 			sleep 2
 			echo -e "Starting \e[34mwlan2\e[0m";
-			ifconfig wlan2 up
+			sudo ifconfig wlan2 up
 			echo -e " " 
 			echo -e "Pulled \e[34mwlan2\e[0m interface up";
 			sleep 1.5
 			clear
 			sleep 0.5
-			iwconfig
+			sudo iwconfig
 			sleep 3
 			clear
 			echo -e "\e[33mTx Power Now Set\e[0m";
 		break
 		;;
 		"wlan3 Connection Status")
-			nmcli device show wlan3
+			sudo nmcli device show wlan3
 			echo -e " "
 			echo -e "\e[31mPlease Note:\e[0m \e[7mYou will return to the main menu in 8 seconds...\e[0m"
 			sleep 8
@@ -261,25 +261,25 @@ select opt in "${options[@]}" ; do
 			echo -e " "
 			sleep 0.5
 			echo -e "Taking down \e[34mwlan3\e[0m";
-			ifconfig wlan2 down
+			sudo ifconfig wlan2 down
 			echo -e " "
 			sleep 3
 			echo -e "Setting Region to \e[34mBolivia\e[0m";
-			iw reg set GY
+			sudo iw reg set GY
 			echo -e " "
 			sleep 3
 			echo -e "Setting \e[34mTxPower to 30\e[0m";
-			iwconfig wlan2 txpower 30
+			sudo iwconfig wlan2 txpower 30
 			echo -e " "
 			sleep 2
 			echo -e "Starting \e[34mwlan3\e[0m";
-			ifconfig wlan2 up
+			sudo ifconfig wlan2 up
 			echo -e " " 
 			echo -e "Pulled \e[34mwlan3\e[0m interface up";
 			sleep 1.5
 			clear
 			sleep 0.5
-			iwconfig
+			sudo iwconfig
 			sleep 3
 			clear
 			echo -e "\e[33mTx Power Now Set\e[0m";
@@ -299,11 +299,11 @@ select opt in "${options[@]}" ; do
 			sleep 0.25
 			echo -e " "
 			sleep 0.25
-			hostname -I
+			sudo hostname -I
 			sleep 0.25
 			echo -e " "
 			sleep 0.25
-			ifconfig
+			sudo ifconfig
 			sleep 0.25
 			echo -e " "
 			sleep 1.5
@@ -322,7 +322,7 @@ select opt in "${options[@]}" ; do
 			echo -e "#\e[33m****************************\e[0m#"
 			sleep 0.25
 			echo -e " "
-			curl http://ipecho.net/plain
+			sudo curl http://ipecho.net/plain
 			echo -e " "
 			sleep 1.5
 			echo -e "\e[31mPlease Note:\e[0m \e[7mYou will return to main menu in 10 seconds...\e[0m"
@@ -333,7 +333,7 @@ select opt in "${options[@]}" ; do
 		"Check Tx Power")
 			clear
 			Splash
-			iwconfig
+			sudo iwconfig
 			sleep 1.5
 			echo -e " "
 			echo -e "\e[31mPlease Note:\e[0m \e[7mYou will return to the main menu in 10 seconds...\e[0m"
